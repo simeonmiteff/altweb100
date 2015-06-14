@@ -25,7 +25,7 @@ logvars2 -p binary.log > textlog.csv
 
 Finally, **plotweb100log.py** does some rudimentary visualisation of logvars2 text log files:
 
-![Example plotweb100log.py output](/screenshot,png?raw=true "Example plotweb100log.py output")
+![Example plotweb100log.py output](/screenshot.png?raw=true "Example plotweb100log.py output")
 
 # Copyright and license
 This code is copyright 2014-2015 the CSIR, and released under [the Apache 2.0 license](LICENSE).
