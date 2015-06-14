@@ -1,9 +1,9 @@
 # altweb100
-altweb100 re-implements a small subset of the official [Web100]{http://www.web100.org/} user-space functionality. This code is likely to be obsolete very soon. I hope it is useful to someone else, but before using altweb100, consider:
+altweb100 re-implements a small subset of the official [Web100](http://www.web100.org/) user-space functionality. This code is likely to be obsolete very soon. I hope it is useful to someone else, but before using altweb100, consider:
 
-* Using the official [Web100 tools]{http://www.web100.org/download/}.
-* Switching to [Web10G]{http://www.web10g.org/} and it's associated tools.
-* Using [TCP\_INFO]{https://code.google.com/p/ndt/wiki/TCP_INFOvsWeb100Web10g} instead.
+* Using the official [Web100 tools](http://www.web100.org/download/).
+* Switching to [Web10G](http://www.web10g.org/) and it's associated tools.
+* Using [TCP\_INFO](https://code.google.com/p/ndt/wiki/TCP_INFOvsWeb100Web10g) instead.
 
 # Why?
 I needed instrumentation of Linux TCP behaviour and already had machines with Web100-patched Linux kernels on our lab servers. The effort to switch to the new Web10G patch was a distraction I couldn't afford at the time (I tried, but chickened out after getting a kernel Oops).
@@ -17,7 +17,7 @@ Run **logweb100.py** as root with the following 6 parameters: **source-ip**, **s
 logweb100.py - - - 5201 /tmp/ 0.01
 ```
 
-This will write a files named w100\_*CID*.log in the standard web100 binary log format. It keeps running, starting a new thread for each matching connection. To convert these to a text format, use the **logvars2** utility (available [here]{http://www.hep.man.ac.uk/u/stevek/public/logvars2/}):
+This will write a files named w100\_*CID*.log in the standard web100 binary log format. It keeps running, starting a new thread for each matching connection. To convert these to a text format, use the **logvars2** utility, which is available [here](http://www.hep.man.ac.uk/u/stevek/public/logvars2/):
 
 ```
 logvars2 -p binary.log > textlog.csv
